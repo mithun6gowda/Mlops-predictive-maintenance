@@ -1,0 +1,45 @@
+artifact_path: file:///c:/Users/368435/Music/MlProjects/Mlops-predictive-maintenance/mlruns/1/models/m-272dd23c63bf4603af3d4ba1850dffce/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.8.0
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+    - xgboost.core.Booster
+    - xgboost.sklearn.XGBClassifier
+    - collections.OrderedDict
+    - lightgbm.basic.Booster
+    - lightgbm.sklearn.LGBMClassifier
+is_signature_from_type_hint: false
+mlflow_version: 3.17.1
+model_id: m-272dd23c63bf4603af3d4ba1850dffce
+model_size_bytes: 6284319
+model_uuid: m-272dd23c63bf4603af3d4ba1850dffce
+prompts: null
+run_id: 43a90714fe304727932a047af449b20f
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "Type_enc", "required": true}, {"type": "double",
+    "name": "Air temperature", "required": true}, {"type": "double", "name": "Process
+    temperature", "required": true}, {"type": "long", "name": "Rotational speed",
+    "required": true}, {"type": "double", "name": "Torque", "required": true}, {"type":
+    "long", "name": "Tool wear", "required": true}, {"type": "double", "name": "Power_W",
+    "required": true}, {"type": "double", "name": "Temp_diff", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-15 07:08:10.508273'

@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+  No Failure       0.99      0.99      0.99      1353
+         TWF       0.11      0.17      0.13         6
+         HDF       1.00      0.93      0.97        15
+         PWF       0.79      1.00      0.88        11
+         OSF       0.83      0.71      0.77        14
+
+    accuracy                           0.98      1399
+   macro avg       0.74      0.76      0.75      1399
+weighted avg       0.99      0.98      0.99      1399
